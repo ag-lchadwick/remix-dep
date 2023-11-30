@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "international-enterprise-app"
+client_id = "e8a7bdb99b8784bf7f661196a637c4dc"
+application_url = "https://trek-moral-warned-amounts.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://trek-moral-warned-amounts.trycloudflare.com/auth/callback",
+  "https://trek-moral-warned-amounts.trycloudflare.com/auth/shopify/callback",
+  "https://trek-moral-warned-amounts.trycloudflare.com/api/auth/callback",
+  "https://trek-moral-warned-amounts.trycloudflare.com/.shopify/graphiql/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "checkout-extensibility-ag.myshopify.com"
